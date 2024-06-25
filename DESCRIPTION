@@ -1,0 +1,34 @@
+Package: ti
+Version: 0.0.0.9000
+Title: A single-channel UINT8 TIFF toolkit
+Description: The {ti} package provides a set of tools for working with 
+    single-channel unsigned 8-bit integer TIFF images.
+Authors@R:
+    c(
+        person(
+            given = "Bart",
+            family = "Rogiers",
+            email = "bart.rogiers@sckcen.be",
+            role = c("cre", "aut"),
+            comment = c(
+              ORCID = "0000-0002-8836-0988",
+              url = "<https://rogiersbart.github.io>"
+            )
+        ),
+        person("SCK CEN", role = c("cph", "fnd"))
+    )
+License: MIT + file LICENSE
+Encoding: UTF-8
+Roxygen: list(markdown = TRUE)
+RoxygenNote: 7.3.1
+Imports: 
+    abind,
+    fs,
+    ijtiff,
+    png,
+    purrr,
+    std
+Suggests: 
+    reticulate
+Remotes:
+    rogiersbart/std

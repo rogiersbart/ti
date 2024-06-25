@@ -1,0 +1,47 @@
+home:
+  title: The {ti} R package
+  description: Single-channel UINT8 TIFF toolkit
+url: https://rogiersbart.github.io/ti
+authors:
+  Bart Rogiers:
+    href: https://rogiersbart.github.io
+  SCK CEN:
+    href: https://www.sckcen.be
+navbar:
+  components:
+    home:
+      icon: fa-home fa-lg
+      href: index.html
+  structure:
+    left:  [home, intro, articles, tutorials, reference, news]
+    right: [search, github]
+reference:
+- title: "Reading and writing TIFFs"
+  desc: Wrappers around {ijtiff}.
+  contents:
+  - ff_read
+  - ff_write
+- title: "Editing TIFFs"
+  desc: Common image processing for TIFF files.
+  contents:
+  - ff_compress
+  - ff_stretch
+  - ff_invert
+  - ff_transpose
+- title: "Working with multiple images/frames"
+  desc: Merge, split or extract frames into/from a multi-frame TIFF.
+  contents:
+  - ff_merge
+  - ff_split
+  - ff_extract
+- title: "File conversion"
+  desc: Convert TIFF files to other image formats.
+  contents:
+  - ff_bob2tif
+  - ff_tif2bob
+  - ff_png2tif
+  - ff_tif2png
+  - ff_csv2tif
+  - ff_tif2csv
+  - ff_npy2tif
+  - ff_tif2npy
